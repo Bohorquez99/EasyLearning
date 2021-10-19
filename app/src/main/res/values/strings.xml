@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EasyLearning</string>
+    <string name="Start">Button</string>
+    <string name="Extra">Button</string>
+    <string name="Settings">Button</string>
+    <string name="title">EasyLearning</string>
+    <string name="jugar">Jugar</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="extras">Extras</string>
+</resources>
