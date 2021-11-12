@@ -2,31 +2,50 @@ package com.example.easylearning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class AjustesActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button ajustes;
+    LinearLayout general_layout, sensi_layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ajustes);
 
-        ajustes = findViewById(R.id.ajustes);
+        general_layout = findViewById(R.id.general_layout);
+        sensi_layout = findViewById(R.id.sensi_layout);
 
-        ajustes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, AjustesActivity.class);
-                startActivity(i);
-            }
-        });
+        findViewById(R.id.btn_general).setOnClickListener(this);
+        findViewById(R.id.btn_sensibilidad).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.btn_general:
+                if(general_layout.getVisibility() == view.GONE){
+                    general_layout.setVisibility(View.VISIBLE);
+                    sensi_layout.setVisibility(View.GONE);
+                }else{
+                    general_layout.setVisibility(View.GONE);
+                }
+                break;
+            case R.id.btn_sensibilidad:
+                if(sensi_layout.getVisibility()== view.GONE){
+                    sensi_layout.setVisibility(View.VISIBLE);
+                    general_layout.setVisibility(View.GONE);
+                }else{
+                    sensi_layout.setVisibility(View.GONE);
+                }
+                break;
+        }
+
 
     }
+
 
     public void onWindowFocusChanged (boolean hasFocus){
         super.onWindowFocusChanged(hasFocus);
@@ -63,5 +82,4 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
     }
-
 }

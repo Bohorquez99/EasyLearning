@@ -7,4 +7,9 @@
     <string name="jugar">Jugar</string>
     <string name="ajustes">Ajustes</string>
     <string name="extras">Extras</string>
+
+    <string name="ajuste1">GENERAL</string>
+    <string name="ajuste2">SENSIBILIDAD</string>
+    <string name="ajuste3">CONTROLES</string>
+    <string name="ajuste4">SONIDOS</string>
 </resources>
