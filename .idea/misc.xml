@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout-land/activity_ajustes.xml" value="0.18" />
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout-land/extras.xml" value="0.1" />
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout/activity_ar_fragment.xml" value="0.209375" />
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout/activity_fragment.xml" value="0.151268115942029" />
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout/activity_fragment_ar.xml" value="0.14628623188405798" />
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout/activity_jugar.xml" value="0.14628623188405798" />
+        <entry key="..\:/Users/MONICA/Documents/AndroidGit/EasyLearning3/app/src/main/res/layout/extras.xml" value="0.1" />
         <entry key="..\:/Users/Sebastian/AndroidStudioProjects/EasyLearning/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
     </option>

@@ -32,17 +32,17 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_controles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ajuste3"
+            android:text="controles"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_sonidos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ajuste4"
+            android:text="sonidos"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -89,6 +89,24 @@
             android:layout_weight="1"
             android:text="SENSIBILIDAD"
             android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="467dp"
+        android:layout_height="212dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="93dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Controles" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
