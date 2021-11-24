@@ -7,38 +7,37 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity {
 
-    Button login;
-    Button registrar;
+    Button ajustes, start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
-        login = findViewById(R.id.login);
-        registrar = findViewById(R.id.registrar);
+        ajustes = findViewById(R.id.registrar);
+        start = findViewById(R.id.login);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        ajustes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                Intent i = new Intent(Main2Activity.this, AjustesActivity.class);
                 startActivity(i);
             }
         });
 
-        registrar.setOnClickListener(new View.OnClickListener() {
+        start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, RegisterActivity.class);
+                Intent i = new Intent(Main2Activity.this, VerJugarActivity.class);
                 startActivity(i);
             }
         });
 
     }
 
-    public void onWindowFocusChanged(boolean hasFocus) {
+    public void onWindowFocusChanged (boolean hasFocus){
         super.onWindowFocusChanged(hasFocus);
         if (hasFocus) {
             hideSystemUI();
@@ -63,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     // Shows the system bars by removing all the flags
     // except for the ones that make the content appear under the system bars.
     private void showSystemUI() {
@@ -72,4 +72,6 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
     }
+
+
 }
