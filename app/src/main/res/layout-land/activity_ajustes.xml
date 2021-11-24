@@ -347,7 +347,7 @@
         android:id="@+id/sonido_layout"
         android:layout_width="478dp"
         android:layout_height="250dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -357,12 +357,70 @@
         app:layout_constraintVertical_bias="0.404">
 
         <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="SONIDOS"
-            android:textColor="#FFFFFF" />
+            android:text="                                         AJUSTES DE SONIDO"
+            android:textColor="#29C11B" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sonido general"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/sonido_general"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp" />
+
+            <TextView
+                android:id="@+id/txtSonidoGene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Musica de Fondo"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/sonido_fondo"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp" />
+
+            <TextView
+                android:id="@+id/txtSonidoFon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

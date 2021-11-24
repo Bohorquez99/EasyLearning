@@ -11,13 +11,51 @@ import android.widget.TextView;
 public class AjustesActivity extends AppCompatActivity implements View.OnClickListener {
 
     LinearLayout general_layout, sensi_layout, control_layout, sonido_layout;
-    private SeekBar sensi_general, sensi_x, sensi_y;
-    private TextView txtCargarGene, txtCargarX, txtCargarY;
+    private SeekBar sensi_general, sensi_x, sensi_y, sonido_general, sonido_fondo;
+    private TextView txtCargarGene, txtCargarX, txtCargarY, txtSonidoGene, txtSonidoFon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajustes);
+
+        //Sonido FONDO
+        txtSonidoFon = findViewById(R.id.txtSonidoFon);
+        sonido_fondo = findViewById(R.id.sonido_fondo);
+        sonido_fondo.setProgress(0);
+        sonido_fondo.setMax(100);
+        sonido_fondo.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                txtSonidoFon.setText(String.valueOf(progress)+" %");
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+        });
+
+        //Sonido GENERAL
+        txtSonidoGene = findViewById(R.id.txtSonidoGene);
+        sonido_general = findViewById(R.id.sonido_general);
+        sonido_general.setProgress(0);
+        sonido_general.setMax(100);
+        sonido_general.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                txtSonidoGene.setText(String.valueOf(progress)+" %");
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
 
         //Sensibilidad EJE Y
         txtCargarY = findViewById(R.id.txtCargarY);

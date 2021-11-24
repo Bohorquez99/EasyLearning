@@ -18,10 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyLearning">
         <activity
-            android:name=".JugarActivity"
+            android:name=".VerJugarActivity"
             android:exported="false" />
         <activity
-            android:name=".FragmentAR"
+            android:name=".JugarActivity"
             android:exported="false" />
         <activity
             android:name=".AjustesActivity"
